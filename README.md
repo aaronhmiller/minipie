@@ -1,9 +1,9 @@
 # minipie
 
-* To build use `$ docker build - < DOCKERFILE_HERE`
+* To build use `$ ./build.sh` You'll be prompted for a version tag. Alternately, use `$ docker build - < DOCKERFILE_HERE`
 * `$ cp Dockerfile-<version> Dockerfile`
-* To tag and build `$ docker build -t kongaaron/minipie:1.0.0 -t kongaaron/minipie:latest .` (assumes Dockerfile in current directory)
-* Once you tag and build, to upload `$ docker push kongaaron/minipie` and `$docker push kongaaron/minipie:1.0.0`
+* If you're not using the build script, manually build and tag `$ docker build -t kongaaron/minipie:1.0.0 -t kongaaron/minipie:latest .` (assumes Dockerfile in current directory)
+* Again, if you're not using the build script, after building and tagging, to upload `$ docker push kongaaron/minipie` and `$docker push kongaaron/minipie:1.0.0`
 
 ## Usage:
 `docker run --rm kongaaron/minipie https://httpbin.org/anything`
