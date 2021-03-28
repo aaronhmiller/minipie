@@ -3,7 +3,7 @@
 * To build use `$ docker build - < DOCKERFILE_HERE`
 * `$ cp Dockerfile-<version> Dockerfile`
 * To tag and build `$ docker build -t kongaaron/minipie:1.0.0 -t kongaaron/minipie:latest .` (assumes Dockerfile in current directory)
-* Once you tag and build, to upload `$ docker push kongaaron/minipie`
+* Once you tag and build, to upload `$ docker push kongaaron/minipie` and `$docker push kongaaron/minipie:1.0.0`
 
 ## Usage:
 `docker run --rm kongaaron/minipie https://httpbin.org/anything`
